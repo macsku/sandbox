@@ -1,8 +1,8 @@
 #include <stdio.h>
-
+#include "test.h"
 
 int main()
 {
-    printf("Hi!");
+    printf("%s", GetMsg());
     return 0;
 }
