@@ -8,3 +8,6 @@ SRC = source/test.c
 
 test:
 	$(CC) -o test $(SRC) $(CFLAGS)
+	
+clean:
+	rm test
