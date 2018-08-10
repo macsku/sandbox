@@ -2,10 +2,12 @@
 #define FOO_H
 
 #include <stdlib.h>
+#include <string.h>
 
-const char* Foo()
+char* Foo()
 {
-    char* buf = (char*)calloc(64, sizeof(char));
+    char* buf = (char*)malloc(64 * sizeof(char));
+    memset(buf, 0, 64);
     int ret = 20;
     sprintf(buf, "Foo is %d", ret);
     return buf;
