@@ -6,8 +6,8 @@
 const char* Foo()
 {
     char* buf = (char*)calloc(64, sizeof(char));
-    int ret = 5;
-    sprintf(buf, "The return from Foo is %d", ret);
+    int ret = 20;
+    sprintf(buf, "Foo is %d", ret);
     return buf;
 }
 

@@ -6,8 +6,8 @@
 int main()
 {
     printf("%s", GetMsg());
-    char* strRet = Foo();
-    printf("%s", strRet);
-    free(strRet);
+    const char* strRet = Foo();
+    printf("%s\n", strRet);
+    free((char*)strRet);
     return 0;
 }
